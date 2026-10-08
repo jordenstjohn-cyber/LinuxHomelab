@@ -11,7 +11,8 @@ This project started as a way to gain more control over my personal technology. 
 * Learn networking through hands-on configuration
 * Understand routing, NAT, DHCP, and DNS
 * Build and manage a Proxmox virtualization environment
-* Deploy self-hosted services
+* Deploy self-hosted media streaming
+* Deploy self-hosted eCommerce website
 * Practice infrastructure troubleshooting
 * Learn storage and hardware architecture
 * Document infrastructure using Git and GitHub
@@ -149,7 +150,15 @@ View documentation →⁠￼
 
 ⸻
 
-### 4. Compact 10-Inch Rack
+### 4. Wordpress Self-Hosted Website
+
+Designed a compact rack infrastructure around a 10-inch form factor.
+
+Areas being investigated:
+
+⸻
+
+### 5. Compact 10-Inch Rack
 
 Designed a compact rack infrastructure around a 10-inch form factor.
 
