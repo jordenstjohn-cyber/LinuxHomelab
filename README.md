@@ -78,22 +78,16 @@ The architecture is still being refined. Some components have been deployed inde
 * Wi-Fi
 * Network troubleshooting
 
-Networking Documentation⁠￼
-
 ### Services
 
 * Pi-hole
 * Network-wide DNS filtering
-
-Services Documentation⁠￼
 
 ### Virtualization
 
 * Proxmox VE
 * Virtual machine infrastructure
 * Storage planning
-
-Virtualization Documentation⁠￼
 
 ### Hardware
 
@@ -103,8 +97,6 @@ Virtualization Documentation⁠￼
 * Storage expansion
 * 10-inch rack
 * DC power distribution
-
-Hardware Documentation⁠￼
 
 
 ## Major Projects
@@ -122,7 +114,7 @@ Learned and configured:
 * WAN connectivity
 * Routing
 
-View documentation →⁠￼
+View documentation →⁠￼[Networking Documentation](./networking/readme.md)
 
 ⸻
 
@@ -138,7 +130,7 @@ Implemented:
 * Client DNS configuration
 * Linux network troubleshooting
 
-View documentation →⁠￼
+View documentation →⁠￼[DNS Server Documentation](./Networking/pihole.md)
 
 ⸻
 
@@ -146,7 +138,7 @@ View documentation →⁠￼
 
 Installed Proxmox VE on an HP EliteDesk Mini to create a dedicated virtualization platform.
 
-View documentation →⁠￼
+View documentation →⁠￼(coming soon)
 
 ⸻
 
@@ -162,6 +154,8 @@ Implemented:
 * Understand MySQL/MariaDB database configuration
 * Practice managing a production-style application
 * Keep infrastructure under my control
+
+View documentation →⁠￼[Website Hosting](./selfhosting/wordpress.md)
 
 ⸻
 
