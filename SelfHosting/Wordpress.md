@@ -21,6 +21,7 @@ The primary goals were:
 * Keep infrastructure under my control
 * Integrate the project into my existing Proxmox homelab
 
+
 ## Architecture
 
 The initial architecture is:
@@ -56,6 +57,7 @@ The website runs inside a dedicated Linux virtual machine rather than directly o
 
 This provides separation between the virtualization platform and the application.
 
+
 ## Infrastructure
 
 ### Proxmox
@@ -84,6 +86,7 @@ The decision to use Debian was based on its:
 
 The VM was created with a minimal installation rather than installing a desktop environment.
 
+
 ## Initial Server Setup
 
 After installing Debian, the server was configured through the command line.
@@ -100,6 +103,7 @@ Initial administration included:
 * Configuring file permissions
 
 The project was intentionally completed primarily through the Linux command line to gain experience with server administration.
+
 
 ## Web Stack
 
@@ -153,6 +157,7 @@ Provides the content management system.
 
 Adds e-commerce functionality.
 
+
 ## Installing the Web Server
 
 Apache was installed as the web server.
@@ -172,6 +177,7 @@ sudo apt install apache2
 ```
 
 Apache was then verified as a running system service.
+
 
 ## Installing PHP
 
@@ -195,6 +201,7 @@ php-intl
 ```
 
 The exact package requirements may change depending on the Debian and PHP versions being used.
+
 
 ## Installing MariaDB
 
@@ -256,6 +263,7 @@ The general structure is:
 ├── wp-config.php
 └── index.php
 ```
+
 
 ## File Ownership and Permissions
 
@@ -344,7 +352,6 @@ The domain provider and hosting infrastructure are intentionally separated.
 
 This means the domain can be moved to a different hosting provider in the future without rebuilding the domain identity.
 
-⸻
 
 ## DNS
 
@@ -417,8 +424,6 @@ Building the server manually resulted in several configuration problems.
 
 These were useful because they provided practical Linux troubleshooting experience.
 
-⸻
-
 ### WordPress Directory Issues
 
 During installation, the WordPress archive was extracted into /var/www
@@ -455,8 +460,6 @@ The problem was resolved by understanding that Linux service accounts are normal
 
 This was an important lesson in understanding dependencies between Linux packages and system users.
 
-⸻
-
 ### Database Configuration Problems
 
 Another problem occurred while configuring the WordPress database.
@@ -484,6 +487,7 @@ WordPress
    ↓
 Database
 ```
+
 
 ## Troubleshooting Method
 
@@ -527,6 +531,7 @@ ip route
 sudo journalctl -xe
 ```
 
+
 ## Security Considerations
 
 Because this is intended to become an internet-accessible e-commerce website, security is an important part of the project.
@@ -548,7 +553,6 @@ Planned security measures include:
 
 Credentials and secrets will not be committed to GitHub.
 
-⸻
 
 ## Backup Strategy
 
@@ -592,7 +596,6 @@ The homelab therefore needs to address:
 
 The existing homelab power project is intended to eventually provide UPS-backed infrastructure.
 
-⸻
 
 ## Lessons Learned
 
@@ -626,7 +629,6 @@ I learned how a web application can be isolated inside a virtual machine while s
 
 Most importantly, I learned to troubleshoot problems by identifying which layer of the stack is actually failing.
 
-⸻
 
 ## Current Architecture
 
@@ -651,6 +653,7 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
                     │ WordPress     │
                     │ WooCommerce   │
                     └───────────────┘
+
 
 ## Current Status
 
@@ -680,7 +683,6 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * Harden SSH
 * Test disaster recovery
 
-⸻
 
 ## Future Improvements
 
@@ -710,7 +712,6 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * Automatic service recovery
 * Documented disaster recovery procedures
 
-⸻
 
 ## Skills Demonstrated
 
@@ -755,7 +756,6 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * Security considerations
 * Infrastructure documentation
 
-⸻
 
 ## Why I Built This
 
