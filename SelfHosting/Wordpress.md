@@ -163,7 +163,11 @@ The general workflow was:
 
 ```Bash
 sudo apt update
+```
+```bash
 sudo apt upgrade
+```
+```bash
 sudo apt install apache2
 ```
 
