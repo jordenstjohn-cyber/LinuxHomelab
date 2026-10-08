@@ -15,6 +15,7 @@ Documentation for the network infrastructure in the homelab.
 
 ## Network Architecture
 
+```text
 Internet
    │
    ▼
@@ -24,9 +25,10 @@ MikroTik RB750Gr3
    │
    ├── Proxmox
    │
-   └── Acer W6
+   └── Acer Predator Connect W6
           │
-          └── Wi-Fi clients
+          └── Wi-Fi Clients
+```
           
 The final architecture is still being refined as routing, DHCP, DNS, and wireless responsibilities are consolidated.
 
@@ -99,6 +101,7 @@ DNS:     192.168.XX.XX
 
 ## Initial Architecture
 
+```text
 Internet
    │
    ▼
@@ -109,6 +112,7 @@ Acer W6
    │
    ▼
 Clients
+```
 
 The W6 was initially operating in router mode.
 
