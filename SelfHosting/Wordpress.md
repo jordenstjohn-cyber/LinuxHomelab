@@ -121,19 +121,19 @@ Linux
 
 Each component has a specific responsibility.
 
-### Linux
+### - Linux
 
 Provides the operating system and server environment.
 
-### Apache
+### - Apache
 
 Handles incoming HTTP requests and serves the website.
 
-### PHP
+### - PHP
 
 Runs the WordPress application.
 
-### MariaDB
+### - MariaDB
 
 Stores WordPress data such as:
 
@@ -179,6 +179,7 @@ The installation required identifying the PHP extensions needed by WordPress and
 
 Examples include:
 
+```bash
 php
 php-mysql
 php-curl
@@ -187,6 +188,7 @@ php-mbstring
 php-xml
 php-zip
 php-intl
+```
 
 The exact package requirements may change depending on the Debian and PHP versions being used.
 
@@ -233,7 +235,9 @@ WordPress was downloaded and extracted into the web server directory.
 
 The application was deployed under:
 
+```bash
 /var/www/wordpress
+```
 
 The directory contains the WordPress application files.
 
@@ -409,13 +413,15 @@ These were useful because they provided practical Linux troubleshooting experien
 
 ### WordPress Directory Issues
 
-During installation, the WordPress archive was extracted into /var/www.
+During installation, the WordPress archive was extracted into /var/www
 
-The expected directory was initially not present when commands were run.
+The expected directory was initially not present when commands were run
 
 Investigation showed that the WordPress directory had been created under:
 
+```bash
 /var/www/wordpress
+```
 
 This reinforced the importance of checking the filesystem before assuming a command succeeded.
 
@@ -423,7 +429,11 @@ Useful commands included:
 
 ```bash
 ls
+```
+```bash
 ls -la
+```
+```bash
 ls -la /var/www
 ```
 
