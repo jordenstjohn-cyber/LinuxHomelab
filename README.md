@@ -154,7 +154,14 @@ View documentation →⁠￼
 
 Designed a compact rack infrastructure around a 10-inch form factor.
 
-Areas being investigated:
+Implemented:
+
+* Host WordPress on my own infrastructure and Debian OS
+* Deploy WooCommerce for e-commerce functionality
+* Practice Linux server administration
+* Understand MySQL/MariaDB database configuration
+* Practice managing a production-style application
+* Keep infrastructure under my control
 
 ⸻
 
