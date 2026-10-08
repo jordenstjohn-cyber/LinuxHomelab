@@ -279,7 +279,9 @@ Apache was configured to serve the WordPress installation.
 
 The website’s document root was configured to point to:
 
+```bash
 /var/www/wordpress
+```
 
 Apache configuration separates the website from the rest of the filesystem and determines how requests are handled.
 
@@ -297,7 +299,9 @@ Database host
 
 This information is stored in:
 
+```bash
 wp-config.php
+```
 
 Sensitive credentials are not stored in this GitHub repository.
 
