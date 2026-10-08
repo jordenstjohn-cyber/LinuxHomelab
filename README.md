@@ -34,13 +34,22 @@ This project started as a way to gain more control over my personal technology. 
               ┌─────────────┼─────────────┐
               │             │             │
               ▼             ▼             ▼
-         ┌─────────┐   ┌──────────┐  ┌──────────┐
-         │ Pi-hole │   │ Proxmox  │  │ Acer W6  │
-         │   RPi   │   │ EliteDesk│  │ Wi-Fi    │
-         │   DNS   │   │          │  │          │
-         └─────────┘   └──────────┘  └────┬─────┘
-                                          │
-                                      Wi-Fi Clients
+         ┌───────────┐   ┌────────────┐  ┌──────────┐
+         │RaspberryPi│   │G5 Elitedesk│  │ Acer W6  │
+         │   PiHole  │   │  Proxmox   │  │ Wi-Fi    │
+         │   DNS     │   │            │  │          │
+         └───────────┘   └─┬──────────┘  └────┬─────┘
+                           |                  │
+            ┌──────────────┤              Wi-Fi Clients
+            ▼              ▼
+         ┌─────────┐   ┌─────────────────────┐  
+         │ Media   │   │ Self-Hosted Website │  
+         │ Jellyfin│   │   Debian Linux VM   │   
+         │ Immich  │   │Wordpress/Woocommerce│  
+         └─────────┘   └─────────────────────┘  
+
+
+
 
 The architecture is still being refined. Some components have been deployed independently while the final routing, DHCP, and Wi-Fi architecture is being completed.
 
