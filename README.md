@@ -114,7 +114,7 @@ Learned and configured:
 * WAN connectivity
 * Routing
 
-View documentation →⁠￼[Networking Documentation](./networking/readme.md)
+View documentation →⁠￼[Networking Documentation](Linuxhomelab/networking/readme.md)
 
 ⸻
 
@@ -130,7 +130,7 @@ Implemented:
 * Client DNS configuration
 * Linux network troubleshooting
 
-View documentation →⁠￼[DNS Server Documentation](./Networking/pihole.md)
+View documentation →⁠￼[DNS Server Documentation](Linuxhomelab/Networking/pihole.md)
 
 ⸻
 
@@ -155,7 +155,7 @@ Implemented:
 * Practice managing a production-style application
 * Keep infrastructure under my control
 
-View documentation →⁠￼[Website Hosting](./selfhosting/wordpress.md)
+View documentation →⁠￼[Website Hosting](Linuxhomelab/selfhosting/wordpress.md)
 
 ⸻
 
