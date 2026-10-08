@@ -39,19 +39,19 @@ The final architecture is still being refined as routing, DHCP, DNS, and wireles
 
 RouterOS configuration, routing, DHCP, NAT, and troubleshooting.
 
-Read MikroTik documentation →⁠￼
+Read MikroTik documentation →⁠￼[MikroTik](https://help.mikrotik.com/docs/spaces/UM/pages/8978720/hEX)
 
 ### Acer W6
 
 Wi-Fi and router/access-point configuration.
 
-Read W6 documentation →⁠￼
+Read W6 documentation →⁠￼[Acer W6](https://global-download.acer.com/GDFiles/Document/User%20Manual/User%20Manual_Acer_1.0_A_A.pdf?acerid=638580771619453908&Step3=PREDATOR%20CONNECT%20W6X%20WI-FI%20GAMING%20ROUTER&OS=ALL&LC=en&BC=ACER&SC=PA_6)
 
 ### IP Addressing
 
 Documentation of the addressing scheme used throughout the lab.
 
-Read IP addressing documentation →⁠￼
+Read IP addressing documentation →⁠￼coming soon
 
 ⸻
 
