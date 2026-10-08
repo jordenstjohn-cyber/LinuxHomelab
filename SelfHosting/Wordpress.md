@@ -125,19 +125,19 @@ Linux
 
 Each component has a specific responsibility.
 
-### - Linux
+### Linux
 
 Provides the operating system and server environment.
 
-### - Apache
+### Apache
 
 Handles incoming HTTP requests and serves the website.
 
-### - PHP
+### PHP
 
 Runs the WordPress application.
 
-### - MariaDB
+### MariaDB
 
 Stores WordPress data such as:
 
