@@ -478,7 +478,7 @@ The general troubleshooting process was:
         ↓
 8. Document the result
 
-Useful Linux commands included:
+### Useful Linux commands included:
 
 ```bash
 systemctl status apache2
