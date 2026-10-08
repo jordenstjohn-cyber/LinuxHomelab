@@ -763,6 +763,7 @@ I wanted to understand what actually happens behind a website rather than treati
 
 By self-hosting WordPress and WooCommerce, I am responsible for the entire application stack:
 
+```text
 Hardware
    ↓
 Power
@@ -784,6 +785,6 @@ WordPress
 WooCommerce
    ↓
 Website
-
+```
 This project is part of my broader homelab and is being used to develop practical Linux, networking, infrastructure, and DevOps skills.
 
