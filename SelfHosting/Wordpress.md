@@ -24,10 +24,11 @@ The primary goals were:
 ## Architecture
 
 The initial architecture is:
-                         Internet
+
+                        Internet
                             │
                             ▼
-                         Router
+                          Router
                             │
                             ▼
                        Proxmox Host
@@ -38,11 +39,10 @@ The initial architecture is:
                  ┌──────────┴──────────┐
                  │                     │
                  ▼                     ▼
-              Apache               MariaDB
-                 │                     │
-                 │                     │
+              Apache                MariaDB
+                 │                     ▲
                  ▼                     │
-             PHP-FPM / PHP             │
+            PHP / PHP-FPM              │
                  │                     │
                  └──────────┬──────────┘
                             │
@@ -105,6 +105,7 @@ The project was intentionally completed primarily through the Linux command line
 
 The deployment uses a traditional Linux web stack.
 
+```text
 Linux
   │
   ├── Apache
@@ -116,6 +117,7 @@ Linux
         └── WordPress
               │
               └── WooCommerce
+```
 
 Each component has a specific responsibility.
 
@@ -207,6 +209,7 @@ A dedicated database was created for WordPress rather than allowing WordPress to
 
 The basic database architecture is:
 
+```text
 MariaDB
    │
    └── WordPress Database
@@ -217,6 +220,7 @@ MariaDB
           ├── Products
           ├── Orders
           └── Settings
+```
 
 A dedicated database user was created with permissions limited to the WordPress database.
 
@@ -235,6 +239,7 @@ The directory contains the WordPress application files.
 
 The general structure is:
 
+```text
 /var/www/wordpress/
 │
 ├── wp-admin/
@@ -242,7 +247,7 @@ The general structure is:
 ├── wp-includes/
 ├── wp-config.php
 └── index.php
-
+```
 
 ## File Ownership and Permissions
 
@@ -307,6 +312,7 @@ WooCommerce adds functionality including:
 
 The resulting application stack is:
 
+```text
 WordPress
     │
     └── WooCommerce
@@ -315,6 +321,7 @@ WordPress
           ├── Cart
           ├── Checkout
           └── Orders
+```
 
 
 ## Domain
@@ -333,11 +340,12 @@ DNS connects the domain name to the public-facing infrastructure.
 
 The conceptual flow is:
 
+```text
 Customer
    │
-   │ example.com
+   │ 
    ▼
-DNS
+  DNS
    │
    ▼
 Public IP
@@ -350,6 +358,7 @@ Homelab
    │
    ▼
 WordPress VM
+```
 
 The DNS configuration will ultimately point the website domain toward the public endpoint used to reach the server.
 
@@ -446,6 +455,7 @@ The issue required checking:
 
 This demonstrated the importance of troubleshooting an application from the bottom of the stack upward.
 
+```text
 Network
    ↓
 Web Server
@@ -455,6 +465,7 @@ PHP
 WordPress
    ↓
 Database
+```
 
 ## Troubleshooting Method
 
@@ -527,6 +538,7 @@ A self-hosted e-commerce website requires backups because the server is under my
 
 Potential backup layers include:
 
+```text
 WordPress
    │
    ├── Website files
@@ -540,6 +552,7 @@ WordPress
           │
           ▼
    Separate storage
+```
 
 Future improvements will include automated backups and off-server backup storage.
 
