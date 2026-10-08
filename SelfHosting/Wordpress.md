@@ -159,9 +159,11 @@ The service was enabled so that it would start automatically when the VM boots.
 
 The general workflow was:
 
+```Bash
 sudo apt update
 sudo apt upgrade
 sudo apt install apache2
+```
 
 Apache was then verified as a running system service.
 
@@ -192,7 +194,9 @@ MariaDB was used as the database server.
 
 The database server was installed with:
 
+```bash
 sudo apt install mariadb-server
+```
 
 The database service was then enabled and started.
 
@@ -408,9 +412,11 @@ This reinforced the importance of checking the filesystem before assuming a comm
 
 Useful commands included:
 
+```bash
 ls
 ls -la
 ls -la /var/www
+```
 
 ### File Ownership Problems
 
@@ -474,17 +480,23 @@ The general troubleshooting process was:
 
 Useful Linux commands included:
 
+```bash
 systemctl status apache2
 systemctl status mariadb
-
+```
+```bash
 ls -la /var/www/wordpress
-
+```
+```bash
 ps aux
-
+```
+```bash
 ip addr
 ip route
-
+```
+```bash
 sudo journalctl -xe
+```
 
 ## Security Considerations
 
