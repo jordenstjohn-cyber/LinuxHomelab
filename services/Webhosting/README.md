@@ -1,4 +1,4 @@
-#Self-Hosted WordPress + WooCommerce
+# Self-Hosted WordPress + WooCommerce
 
 A self-hosted WordPress and WooCommerce deployment running on my personal Proxmox homelab.
 
@@ -7,7 +7,7 @@ The goal of this project was to build and operate a real e-commerce website usin
 This project combines Linux server administration, virtualization, web hosting, databases, DNS, PHP, WordPress, WooCommerce, and basic infrastructure troubleshooting.
 
 
-##Project Goals
+## Project Goals
 
 The primary goals were:
 
@@ -21,7 +21,7 @@ The primary goals were:
 * Keep infrastructure under my control
 * Integrate the project into my existing Proxmox homelab
 
-##Architecture
+## Architecture
 
 The initial architecture is:
                          Internet
@@ -56,9 +56,9 @@ The website runs inside a dedicated Linux virtual machine rather than directly o
 
 This provides separation between the virtualization platform and the application.
 
-##Infrastructure
+## Infrastructure
 
-Proxmox
+### Proxmox
 
 The WordPress server runs as a virtual machine on my existing Proxmox infrastructure.
 
@@ -71,7 +71,7 @@ Using a VM provides:
 * Ability to experiment without affecting other services
 * A realistic server administration environment
 
-##Operating System
+### Operating System
 The web server VM uses Debian Linux.
 
 The decision to use Debian was based on its:
@@ -84,7 +84,7 @@ The decision to use Debian was based on its:
 
 The VM was created with a minimal installation rather than installing a desktop environment.
 
-##Initial Server Setup
+## Initial Server Setup
 
 After installing Debian, the server was configured through the command line.
 
@@ -101,7 +101,7 @@ Initial administration included:
 
 The project was intentionally completed primarily through the Linux command line to gain experience with server administration.
 
-##Web Stack
+## Web Stack
 
 The deployment uses a traditional Linux web stack.
 
@@ -119,19 +119,19 @@ Linux
 
 Each component has a specific responsibility.
 
-Linux
+### Linux
 
 Provides the operating system and server environment.
 
-Apache
+### Apache
 
 Handles incoming HTTP requests and serves the website.
 
-PHP
+### PHP
 
 Runs the WordPress application.
 
-MariaDB
+### MariaDB
 
 Stores WordPress data such as:
 
@@ -143,15 +143,15 @@ Stores WordPress data such as:
 * Settings
 * Plugin configuration
 
-WordPress
+### WordPress
 
 Provides the content management system.
 
-WooCommerce
+### WooCommerce
 
 Adds e-commerce functionality.
 
-##Installing the Web Server
+## Installing the Web Server
 
 Apache was installed as the web server.
 
@@ -165,7 +165,7 @@ sudo apt install apache2
 
 Apache was then verified as a running system service.
 
-##Installing PHP
+## Installing PHP
 
 WordPress requires PHP to execute the application.
 
@@ -186,7 +186,7 @@ php-intl
 
 The exact package requirements may change depending on the Debian and PHP versions being used.
 
-##Installing MariaDB
+## Installing MariaDB
 
 MariaDB was used as the database server.
 
@@ -197,7 +197,7 @@ sudo apt install mariadb-server
 The database service was then enabled and started.
 
 
-##Database Configuration
+## Database Configuration
 
 A dedicated database was created for WordPress rather than allowing WordPress to use an administrative database account.
 
@@ -219,7 +219,7 @@ A dedicated database user was created with permissions limited to the WordPress 
 This follows the principle of giving applications only the permissions they require.
 
 
-##WordPress Deployment
+## WordPress Deployment
 
 WordPress was downloaded and extracted into the web server directory.
 
@@ -240,7 +240,7 @@ The general structure is:
 └── index.php
 
 
-##File Ownership and Permissions
+## File Ownership and Permissions
 
 One of the first Linux administration challenges was understanding the relationship between:
 
@@ -256,7 +256,7 @@ The web application directory was therefore configured with appropriate ownershi
 This was an important practical lesson because a website can appear to be correctly installed while still failing because the web server cannot access its files.
 
 
-##Apache Configuration
+## Apache Configuration
 
 Apache was configured to serve the WordPress installation.
 
@@ -267,7 +267,7 @@ The website’s document root was configured to point to:
 Apache configuration separates the website from the rest of the filesystem and determines how requests are handled.
 
 
-##WordPress Configuration
+## WordPress Configuration
 
 WordPress requires database connection information.
 
@@ -285,7 +285,7 @@ wp-config.php
 Sensitive credentials are not stored in this GitHub repository.
 
 
-##WooCommerce
+## WooCommerce
 
 After WordPress was operational, WooCommerce was installed as the e-commerce platform.
 
@@ -313,7 +313,7 @@ WordPress
           └── Orders
 
 
-##Domain
+## Domain
 
 The website uses a custom domain purchased separately from the server infrastructure.
 
@@ -323,7 +323,7 @@ This means the domain can be moved to a different hosting provider in the future
 
 ⸻
 
-##DNS
+## DNS
 
 DNS connects the domain name to the public-facing infrastructure.
 
@@ -350,7 +350,7 @@ WordPress VM
 The DNS configuration will ultimately point the website domain toward the public endpoint used to reach the server.
 
 
-##Network Architecture
+## Network Architecture
 
 The WordPress VM exists behind the homelab’s network infrastructure.
 
@@ -386,7 +386,7 @@ The general architecture is:
 This project therefore required understanding how application traffic moves through multiple infrastructure layers.
 
 
-##Problems Encountered
+## Problems Encountered
 
 Building the server manually resulted in several configuration problems.
 
@@ -394,7 +394,7 @@ These were useful because they provided practical Linux troubleshooting experien
 
 ⸻
 
-###WordPress Directory Issues
+### WordPress Directory Issues
 
 During installation, the WordPress archive was extracted into /var/www.
 
@@ -412,7 +412,7 @@ ls
 ls -la
 ls -la /var/www
 
-###File Ownership Problems
+### File Ownership Problems
 
 One issue involved attempting to assign ownership to a web-server account before the appropriate web server package/user existed.
 
@@ -424,7 +424,7 @@ This was an important lesson in understanding dependencies between Linux package
 
 ⸻
 
-###Database Configuration Problems
+### Database Configuration Problems
 
 Another problem occurred while configuring the WordPress database.
 
@@ -450,7 +450,7 @@ WordPress
    ↓
 Database
 
-##Troubleshooting Method
+## Troubleshooting Method
 
 When something failed, I worked from observable symptoms rather than repeatedly reinstalling components.
 
@@ -486,7 +486,7 @@ ip route
 
 sudo journalctl -xe
 
-##Security Considerations
+## Security Considerations
 
 Because this is intended to become an internet-accessible e-commerce website, security is an important part of the project.
 
@@ -509,7 +509,7 @@ Credentials and secrets will not be committed to GitHub.
 
 ⸻
 
-##Backup Strategy
+## Backup Strategy
 
 A self-hosted e-commerce website requires backups because the server is under my control.
 
@@ -532,7 +532,7 @@ WordPress
 Future improvements will include automated backups and off-server backup storage.
 
 
-##Availability
+## Availability
 
 One of the challenges of self-hosting an e-commerce application from a homelab is availability.
 
@@ -551,41 +551,41 @@ The existing homelab power project is intended to eventually provide UPS-backed 
 
 ⸻
 
-##Lessons Learned
+## Lessons Learned
 
 This project provided hands-on experience with several infrastructure concepts.
 
-###Linux
+### Linux
 
 I learned how Linux services, users, permissions, packages, and filesystems interact.
 
-###Web Servers
+### Web Servers
 
 I learned how Apache receives requests and serves an application from the filesystem.
 
-###PHP
+### PHP
 
 I learned that WordPress is not simply a collection of static HTML files and requires a server-side runtime.
 
-###Databases
+### Databases
 
 I learned how an application depends on a separate database service and how credentials and permissions connect the two.
 
-###Networking
+### Networking
 
 I learned how DNS, routing, NAT, and port forwarding affect an internet-facing service.
 
-###Virtualization
+### Virtualization
 
 I learned how a web application can be isolated inside a virtual machine while still operating as part of a larger infrastructure environment.
 
-###Troubleshooting
+### Troubleshooting
 
 Most importantly, I learned to troubleshoot problems by identifying which layer of the stack is actually failing.
 
 ⸻
 
-##Current Architecture
+## Current Architecture
 
                          INTERNET
                             │
@@ -609,9 +609,9 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
                     │ WooCommerce   │
                     └───────────────┘
 
-##Current Status
+## Current Status
 
-###Completed
+### Completed
 
 * Created Proxmox VM
 * Installed Debian
@@ -625,7 +625,7 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * Installed WooCommerce
 * Began configuring the website
 
-###In Progress
+### In Progress
 
 * Finalize Apache configuration
 * Configure domain DNS
@@ -639,9 +639,9 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 
 ⸻
 
-##Future Improvements
+## Future Improvements
 
-###Infrastructure
+### Infrastructure
 
 * Reverse proxy
 * HTTPS automation
@@ -651,7 +651,7 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * Automated backups
 * UPS integration
 
-###DevOps
+### DevOps
 
 * Git-based configuration
 * Ansible
@@ -659,7 +659,7 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * CI/CD
 * Infrastructure as Code
 
-###Reliability
+### Reliability
 
 * Off-site backups
 * Recovery testing
@@ -669,9 +669,9 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 
 ⸻
 
-##Skills Demonstrated
+## Skills Demonstrated
 
-###Linux
+### Linux
 
 * Debian
 * Package management
@@ -682,7 +682,7 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * Service management
 * Troubleshooting
 
-###Web Infrastructure
+### Web Infrastructure
 
 * Apache
 * PHP
@@ -690,7 +690,7 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * WordPress
 * WooCommerce
 
-###Networking
+### Networking
 
 * DNS
 * TCP/IP
@@ -698,13 +698,13 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 * Port forwarding
 * LAN/WAN architecture
 
-###Virtualization
+### Virtualization
 
 * Proxmox VE
 * Virtual machines
 * Server isolation
 
-###Infrastructure
+### Infrastructure
 
 * Self-hosting
 * Backup planning
@@ -714,7 +714,7 @@ Most importantly, I learned to troubleshoot problems by identifying which layer 
 
 ⸻
 
-Why I Built This
+## Why I Built This
 
 I wanted to understand what actually happens behind a website rather than treating hosting as a black box.
 
