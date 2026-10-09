@@ -15,6 +15,7 @@ A personal homelab built to develop practical skills in Linux administration, ne
 * Learn storage and hardware architecture
 * Document infrastructure using Git and GitHub
 * Progress toward automation, containers, and DevOps
+* Learn to deploy and manage applications in a Kubernetes cluster
 
 
 ## Architecture
