@@ -165,6 +165,13 @@ Run a smooth streaming service that can handle multiple users
 
 Implemented:
 
+* Learn how to deploy and maintain self-hosted applications on Linux.
+* Understand the relationship between virtual machines, applications, and persistent storage.
+* Build a private media streaming environment.
+* Create a personal photo and video backup system.
+
+View documentation →⁠￼[Self-Hosted Streaming](SelfHosting/Streaming.md)
+
 ⸻
 
 ### 5. Compact 10-Inch Rack
@@ -179,6 +186,7 @@ Areas being investigated:
 * Cable management
 * Storage
 * Device mounting
+* Cooling
 
 View documentation →⁠￼Hardware build coming soon
 
