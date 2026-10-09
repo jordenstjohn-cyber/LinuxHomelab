@@ -1,4 +1,4 @@
-# LinuxHomelab
+# Linux Homelab
 
 A personal homelab built to develop practical skills in Linux administration, networking, virtualization, DNS/DHCP, and infrastructure troubleshooting. Control of my media with the ability to share and self host. To run a full-stack self-hosted ecommerce platform built from the ground up with no prior experience.
 
