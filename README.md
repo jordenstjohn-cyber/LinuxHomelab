@@ -144,7 +144,7 @@ View documentation →⁠￼(coming soon)
 
 ### 4. Wordpress Self-Hosted Website
 
-Designed a compact rack infrastructure around a 10-inch form factor.
+Set up a full stack for a online store
 
 Implemented:
 
@@ -156,6 +156,14 @@ Implemented:
 * Keep infrastructure under my control
 
 View documentation →⁠￼[Website Hosting](SelfHosting/Wordpress.md)
+
+⸻
+
+### 4. Self-Hosted Media Streaming Service
+
+Run a smooth streaming service that can handle multiple users
+
+Implemented:
 
 ⸻
 
@@ -172,7 +180,7 @@ Areas being investigated:
 * Storage
 * Device mounting
 
-View documentation →⁠￼
+View documentation →⁠￼Hardware build coming soon
 
 ⸻
 
