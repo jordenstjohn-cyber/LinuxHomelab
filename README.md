@@ -138,6 +138,11 @@ View documentation →⁠￼[DNS Server Documentation](networking/PiHole.md)
 
 Installed Proxmox VE on an HP EliteDesk Mini to create a dedicated virtualization platform.
 
+Why not complete:
+* Running but far from optimized
+* Need to secure before giving access the internet
+* Will complete write up when stable and locked down
+
 View documentation →⁠￼(coming soon)
 
 ⸻
@@ -174,7 +179,7 @@ View documentation →⁠￼[Self-Hosted Streaming](SelfHosting/Streaming.md)
 
 ⸻
 
-### 5. Compact 10-Inch Rack
+### 5. Compact 10-Inch Rack 
 
 Designed a compact rack infrastructure around a 10-inch form factor.
 
@@ -188,7 +193,7 @@ Areas being investigated:
 * Device mounting
 * Cooling
 
-View documentation →⁠￼Hardware build coming soon
+View documentation →⁠￼Hardware write up coming soon
 
 ⸻
 
