@@ -73,6 +73,10 @@ Check the downloaded file
 
 Open a terminal:
 
-Bash
+'''bash 
 cd ~/Downloads
-ls -lh
+ls -lh'''
+
+
+
+
