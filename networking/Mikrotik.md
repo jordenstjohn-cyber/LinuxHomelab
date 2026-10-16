@@ -33,3 +33,42 @@ The objective is to develop practical Linux and networking skills through hands-
 | Acer Predator Connect W6 | Router / Wi-Fi system | Wireless connectivity |
 | Proxmox host | Proxmox VE | Virtualization and server workloads |
 | Debian virtual machine | Debian Linux | Linux server administration and self-hosted applications |
+
+## Network Architecture
+
+                 Internet
+                    |
+                    v
+             [Internet Gateway]
+                    |
+                    v
+              MikroTik hEX
+            [LAN Router / DHCP]
+                    |
+          +---------+----------+
+          |         |          |
+          v         v          v
+       Pi-hole   Proxmox    Fedora Laptop
+        [DNS]    [Virtual     [Network
+                  Machines]   Admin]
+                    |
+                    v
+              Debian Server
+            [WordPress / WooCommerce]
+
+### 1. Installing WinBox on Fedora
+
+WinBox is MikroTik’s graphical administration utility for managing RouterOS devices.
+
+Official download page: ⁠MikroTik WinBox
+
+Download WinBox
+
+1. Open the official MikroTik download page.
+2. Locate the WinBox download.
+3. Download the Linux version appropriate for your Fedora workstation and system architecture.
+4. Save the downloaded file somewhere convenient, such as ~/Downloads.
+
+Check the downloaded file
+
+Open a terminal:
