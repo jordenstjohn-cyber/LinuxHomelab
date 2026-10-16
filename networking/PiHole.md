@@ -90,7 +90,7 @@ Wi-Fi or Wired Client
           |
           v
      Pi-hole DNS
-    192.168.88.207
+    192.168.xxx.2xx
           |
           v
    Upstream DNS Resolver
