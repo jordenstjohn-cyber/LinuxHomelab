@@ -73,9 +73,12 @@ Check the downloaded file
 
 Open a terminal:
 
-'''bash 
+```bash 
 cd ~/Downloads
-ls -lh'''
+ls -lh ```
+
+
+
 
 
 
