@@ -155,7 +155,7 @@ WordPress HTML pages are not automatically cached in every situation. Cache rule
 
 Shopping carts, checkout pages, account pages, logged-in sessions, and other personalized responses must not be cached indiscriminately.
 
-Cloudflare Load Balancing
+### Cloudflare Load Balancing
 
 Cloudflare Load Balancing will monitor the health of the configured origins and direct requests according to the selected traffic-steering policy.
 
@@ -177,7 +177,7 @@ Health checks must be configured with appropriate timeouts, expected responses, 
 
 A successful health check should indicate that the application can serve requests, not merely that the machine is powered on.
 
-Important: Detecting Overload
+### Important: Detecting Overload
 
 A health check is not necessarily an overload detector.
 
