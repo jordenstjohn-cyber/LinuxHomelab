@@ -60,7 +60,7 @@ The objective is to develop practical Linux and networking skills through hands-
 
 WinBox is MikroTik’s graphical administration utility for managing RouterOS devices.
 
-Official download page: ⁠MikroTik WinBox
+Official download page: ⁠[MikroTik WinBox](https://mikrotik.com/winbox)
 
 Download WinBox
 
@@ -72,3 +72,7 @@ Download WinBox
 Check the downloaded file
 
 Open a terminal:
+
+Bash
+cd ~/Downloads
+ls -lh
