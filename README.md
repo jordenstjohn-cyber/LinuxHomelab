@@ -79,7 +79,7 @@ Directory: linux/
 
 Documentation covering the installation, architecture, operation, and maintenance of services running on the homelab.
 
-Directory: [Services](PersonalServer/Steaming.md)
+Directory: [Services](/PersonalServer/Steaming.md)
 
 ### Security & Privacy
 
