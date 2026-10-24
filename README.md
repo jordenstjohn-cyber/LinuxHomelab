@@ -160,4 +160,5 @@ The long-term goal is to develop practical skills that can be transferred into i
 Author
 
 Jorden St. John
+
 Doing my best to control and understand our data in the modern world. 
