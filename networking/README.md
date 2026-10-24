@@ -39,7 +39,7 @@ The final architecture is still being refined as routing, DHCP, DNS, and wireles
 
 RouterOS configuration, routing, DHCP, NAT, firewall and troubleshooting.
 
-Read MikroTik documentation →⁠￼[MikroTik](/Mikrotik.md)
+Read MikroTik documentation →⁠￼[MikroTik](Mikrotik.md)
 
 ### Network Security
 
