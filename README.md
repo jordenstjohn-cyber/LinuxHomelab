@@ -27,36 +27,15 @@ My homelab combines network infrastructure, virtualization, Linux servers, and s
 The implementation and configuration of individual components are documented in their respective project directories.
 
 
-## Architecture
+## Homelab Architecture
 
-                         Internet
-                            │
-                            │
-                    ┌───────▼────────┐
-                    │    MikroTik    │
-                    │   hEX RB750Gr3 │
-                    │                │
-                    │ Routing / DHCP │
-                    │      / NAT     │
-                    └───────┬────────┘
-                            │
-              ┌─────────────┼─────────────┐
-              │             │             │
-              ▼             ▼             ▼
-         ┌───────────┐   ┌────────────┐  ┌──────────┐
-         │RaspberryPi│   │G5 Elitedesk│  │ Acer W6  │
-         │   PiHole  │   │  Proxmox   │  │ Wi-Fi    │
-         │   DNS     │   │            │  │          │
-         └───────────┘   └─┬──────────┘  └────┬─────┘
-                           |                  │
-            ┌──────────────┤              Wi-Fi Clients
-            ▼              ▼
-         ┌─────────┐   ┌─────────────────────┐  
-         │ Media   │   │ Self-Hosted Website │  
-         │ Jellyfin│   │   Debian Linux VM   │   
-         │ Immich  │   │Wordpress/Woocommerce│  
-         └─────────┘   └─────────────────────┘  
+The diagram below illustrates the current homelab infrastructure,
 
+including network routing, virtualization, self-hosted services,
+
+and planned remote failover.
+
+![Homelab Network Architecture](images/architecture.png)
 
 
 
