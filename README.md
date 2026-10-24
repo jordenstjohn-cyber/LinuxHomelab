@@ -75,11 +75,11 @@ Documentation covering Debian server configuration, system administration, and t
 
 Directory: linux/
 
-### Self-Hosted Services
+### Personal Self-Hosted Services
 
 Documentation covering the installation, architecture, operation, and maintenance of services running on the homelab.
 
-Directory: services/
+Directory: [Services](PersonalServer/Steaming.md)
 
 ### Security & Privacy
 
