@@ -61,7 +61,7 @@ Explore the Projects
 
 Documentation covering network topology, MikroTik configuration, DNS filtering, and planned network improvements.
 
-Directory: [Networking](LinuxHomelab/networking/README.md)  
+Directory: [Networking](/networking/README.md)  
 
 ### Virtualization
 
