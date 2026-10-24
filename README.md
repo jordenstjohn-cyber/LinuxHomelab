@@ -1,21 +1,30 @@
 # Linux Homelab
 
-A personal homelab built to develop practical skills in Linux administration, networking, virtualization, DNS/DHCP, and infrastructure troubleshooting. Control of my media with the ability to share and self host. To run a full-stack self-hosted ecommerce platform built from the ground up with no prior experience.
+## Self-Hosted Infrastructure, Linux Administration & Networking
 
+This repository documents the design, configuration, maintenance, and ongoing development of my personal homelab. Everything from my personal network/media to my self hosted E-commerce website. With the intent to help other with zero experience and have transperency with the our information. 
 
-## Project Goals
+Built around Proxmox, Debian Linux, and MikroTik networking, this environment serves as a practical learning platform for Linux administration, network engineering, virtualization, and self-hosted services.
 
-* Develop practical Linux administration skills
-* Learn networking through hands-on configuration
-* Understand routing, NAT, DHCP, and DNS
-* Build and manage a Proxmox virtualization environment
-* Deploy self-hosted media streaming
-* Deploy self-hosted eCommerce website
-* Practice infrastructure troubleshooting
-* Learn storage and hardware architecture
-* Document infrastructure using Git and GitHub
-* Progress toward automation, containers, and DevOps
-* Learn to deploy and manage applications in a Kubernetes cluster
+The goal is to build a reliable, understandable, and maintainable infrastructure environment while documenting the decisions, configurations, challenges, and lessons learned along the way.
+
+⸻
+
+## Infrastructure Overview
+
+My homelab combines network infrastructure, virtualization, Linux servers, and self-hosted applications.
+
+| Component | Technology | Purpose |
+|-|-|-|
+| Virtualization | Proxmox VE | Hosts virtual machines and server workloads |
+| Network routing | MikroTik hEX RB750Gr3 | Routes traffic between the local network and internet |
+| DNS filtering | Pi-hole | Provides network-level DNS filtering |
+| Server operating system | Debian Linux | Runs self-hosted applications |
+| Web server | Nginx | Serves the WordPress website |
+| Database | MariaDB | Stores application data |
+| E-commerce | WordPress and WooCommerce | Powers the Katto & Co. website |
+
+The implementation and configuration of individual components are documented in their respective project directories.
 
 
 ## Architecture
@@ -64,137 +73,53 @@ The architecture is still being refined. Some components have been deployed inde
 | Acer W6 | Wi-Fi | Active |
 
 
-## Infrastructure Components
-
-### Networking
-
-* MikroTik RouterOS
-* IPv4 addressing
-* DHCP
-* DNS
-* NAT
-* Routing
-* Wi-Fi
-* Network troubleshooting
-
-### Services
-
-* Pi-hole
-* Network-wide DNS filtering
-
-### Virtualization
-
-* Proxmox VE
-* Virtual machine infrastructure
-* Storage planning
-
-### Hardware
-
-* HP EliteDesk
-* Raspberry Pi
-* ThinkPad T480s
-* Storage expansion
-* 10-inch rack
-* DC power distribution
-
 
 ## Major Projects
 
-### 1. MikroTik Network Deployment
+Explore the Projects
 
-Introduced a MikroTik hEX RB750Gr3 as the primary routing platform.
+### Networking
 
-Learned and configured:
+Documentation covering network topology, MikroTik configuration, DNS filtering, and planned network improvements.
 
-* RouterOS
-* DHCP
-* NAT
-* LAN addressing
-* WAN connectivity
-* Routing
+Directory: networking/
 
-View documentation →⁠￼[Networking Documentation](networking/README.md)
+### Virtualization
 
-⸻
+Documentation covering Proxmox and the virtualized infrastructure supporting the homelab.
 
-### 2. Pi-hole DNS Server
+Directory: virtualization/
 
-Deployed Pi-hole on a dedicated Raspberry Pi.
+### Linux Administration
 
-Implemented:
+Documentation covering Debian server configuration, system administration, and troubleshooting.
 
-* Static IP addressing
-* Ethernet networking
-* DNS filtering
-* Client DNS configuration
-* Linux network troubleshooting
+Directory: linux/
 
-View documentation →⁠￼[DNS Server Documentation](networking/PiHole.md)
+### Self-Hosted Services
 
-⸻
+Documentation covering the installation, architecture, operation, and maintenance of services running on the homelab.
 
-### 3. Proxmox Virtualization Host
+Directory: services/
 
-Installed Proxmox VE on an HP EliteDesk Mini to create a dedicated virtualization platform.
+### Security & Privacy
 
-Why not complete:
-* Running but far from optimized
-* Need to secure before giving access the internet
-* Will complete write up when stable and locked down
+Documentation covering security practices, privacy principles, and improvements to infrastructure reliability.
 
-View documentation →⁠￼(coming soon)
+Directory: security-privacy/
 
-⸻
 
-### 4. Wordpress Self-Hosted Website
+## Engineering Principles
 
-Set up a full stack for a online store
+This project follows several principles:
 
-Implemented:
+* Document the implementation: Explain how systems are configured and why particular decisions were made.
+* Prefer maintainability: Favor understandable configurations and repeatable procedures.
+* Design for recovery: Document backups, troubleshooting, and recovery procedures as they are implemented.
+* Protect sensitive information: Never intentionally publish credentials, private keys, customer information, or sensitive infrastructure details.
+* Improve iteratively: Separate implemented features from planned improvements.
+* Learn through practical work: Record the problems encountered and the steps used to resolve them.
 
-* Host WordPress on my own infrastructure and Debian OS
-* Deploy WooCommerce for e-commerce functionality
-* Practice Linux server administration
-* Understand MySQL/MariaDB database configuration
-* Practice managing a production-style application
-* Keep infrastructure under my control
-
-View documentation →⁠￼[Website Hosting](SelfHosting/Wordpress.md)
-
-⸻
-
-### 4. Self-Hosted Media Streaming Service
-
-Run a smooth streaming service that can handle multiple users
-
-Implemented:
-
-* Learn how to deploy and maintain self-hosted applications on Linux.
-* Understand the relationship between virtual machines, applications, and persistent storage.
-* Build a private media streaming environment.
-* Create a personal photo and video backup system.
-
-View documentation →⁠￼[Self-Hosted Streaming](SelfHosting/Streaming.md)
-
-⸻
-
-### 5. Compact 10-Inch Rack 
-
-Designed a compact rack infrastructure around a 10-inch form factor.
-
-Areas being investigated:
-
-* Power distribution
-* UPS
-* DC voltage conversion
-* Cable management
-* Storage
-* Device mounting
-* Cooling
-
-View documentation →⁠￼Hardware write up coming soon
-
-⸻
 
 ## Troubleshooting
 
@@ -213,66 +138,12 @@ Troubleshooting documentation →⁠￼
 
 ⸻
 
-## Skills Demonstrated
+## Current Development
 
-### Linux
+The homelab is an evolving project. Current and planned improvements include network segmentation, stronger monitoring, more robust backup and recovery procedures, and continued development of self-hosted services.
 
-* Linux administration
-* SSH
-* NetworkManager
-* Static networking
-* Routing tables
-* System services
-* Package management
+See docs/roadmap.md for the development plan.
 
-### Networking
-
-* IPv4
-* DHCP
-* DNS
-* NAT
-* Routing
-* LAN/WAN
-* Wireless networking
-* Network troubleshooting
-
-### Infrastructure
-
-* Proxmox VE
-* Hardware selection
-* Storage architecture
-* Power distribution
-* Rack design
-
-### Tools
-
-* Git
-* GitHub
-* Linux CLI
-* RouterOS CLI
-* Proxmox
-
-⸻
-
-## Roadmap
-
-* Build physical homelab
-* Install Proxmox
-* Deploy MikroTik
-* Deploy Pi-hole
-* Configure static Pi-hole networking
-* Investigate Linux routing
-* Begin 10-inch rack design
-* Finalize router / AP architecture
-* Finalize DHCP architecture
-* Expand Proxmox storage
-* Deploy additional services
-* Introduce Docker
-* Introduce Ansible
-* Implement monitoring
-* Begin Infrastructure as Code
-* Build CI/CD projects
-* Experiment with Kubernetes
 
 ⸻
 
@@ -289,7 +160,4 @@ The long-term goal is to develop practical skills that can be transferred into i
 Author
 
 Jorden St. John
-
-SaaS Sales → Linux / Infrastructure / DevOps
-
-This repository documents the transition from customer-facing technology experience into hands-on infrastructure engineering.
+Doing my best to control and understand our data in the modern world. 
