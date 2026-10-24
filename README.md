@@ -35,7 +35,7 @@ including network routing, virtualization, self-hosted services,
 
 and planned remote failover.
 
-![Homelab Network Architecture](images/architecture.png)
+![Homelab Network Architecture](images/homelab-architecture.png)
 
 
 
