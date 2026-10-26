@@ -2,7 +2,7 @@
 
 ## Self-Hosted Infrastructure, Linux Administration & Networking
 
-This repository documents the design, configuration, maintenance, and ongoing development of my personal homelab. Everything from my personal network/media to my self hosted E-commerce website. With the intent to help other with zero experience and have transperency with the our information. 
+This repository documents the design, configuration, maintenance, and ongoing development of my personal homelab. Everything from my personal network/media to my self hosted E-commerce website. With the intent to help other with zero experience and have transperency with information. 
 
 Built around Proxmox, Debian Linux, and MikroTik networking, this environment serves as a practical learning platform for Linux administration, network engineering, virtualization, and self-hosted services.
 
