@@ -132,7 +132,10 @@ This project began as a personal Linux and infrastructure learning environment.
 
 Rather than learning infrastructure entirely through tutorials, I am using physical hardware to build, break, troubleshoot, document, and improve a functioning environment.
 
-The long-term goal is to develop practical skills that can be transferred into infrastructure and DevOps roles.
+The long-term goal is to develop practical skills networking, security, and development operations. 
+
+Cheers,
+Jorden
 
 ⸻
 
