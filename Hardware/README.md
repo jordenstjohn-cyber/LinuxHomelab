@@ -300,7 +300,4 @@ flowchart TB
 - [ ] Choose storage drives, controller, filesystem, and backup approach.
 - [ ] Define VLANs and firewall policy before moving devices between networks.
 
-## 9. Change log
 
-Add a dated entry whenever hardware is purchased, installed, removed, or
-reconfigured.
